@@ -1,21 +1,21 @@
 package com.cn.llj.threads;
 /**
- * @author ÁõÀû¾ê liulijuan132@gmail.com
- * @version ´´½¨Ê±¼ä:2014Äê1ÔÂ15ÈÕ ÏÂÎç7:46:32
- * ÀàËµÃ÷£º
- * Ïß³ÌÊ¹ÓÃÑİÊ¾
- */
-public class Mythread extends Thread{
-	public static int i = 0;
+ * @author LLJ
+ * @version 2017å¹´3æœˆ25æ—¥ä¸‹åˆ12:53:22
+*/
+public class MyThread extends Thread{
+	@Override
 	public void run(){
-		System.out.println("µ÷ÓÃÁËµÚ"+(i++)+"Ïß³Ì£¡");
+		for(int i = 0; i < 10; i++){
+			try {
+				int time = (int) (Math.random()* 10000);
+				Thread.sleep(time);
+				System.out.println("sleep="+time + "\trun="+ Thread.currentThread().getName()+" "+i);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
 	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Mythread thread = new Mythread();
-		thread.start();
-		Mythread thread2 = new Mythread();
-		thread2.start();
-	}
-
 }
