@@ -16,7 +16,7 @@ public class HashMapTest1 {
 
 		HashMap<String,Integer> map = new HashMap<String,Integer>();
 		
-		for(int i = 10; i>0; i--){
+		for(int i = 20; i>0; i--){
 			map.put("Key"+i, i);
 		}
 		
