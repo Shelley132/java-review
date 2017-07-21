@@ -69,6 +69,7 @@ public class PingHengShu {
 				System.out.println("NO");
 			}
 		}
+		scan.close();
 	}
 
 }

@@ -1,0 +1,51 @@
+Thread 0xff8164f8
+
+  locals:
+
+Thread 0xff816670
+
+  locals:
+
+Thread 0xff8167e8
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.ref.ReferenceQueue.remove(J)Ljava/lang/ref/Reference; (Unknown Source)
+  at java.lang.ref.ReferenceQueue.remove()Ljava/lang/ref/Reference; (Unknown Source)
+  at java.lang.ref.Finalizer$FinalizerThread.run()V (Unknown Source)
+
+  locals:
+    objectId=0xff816978, line=1
+    objectId=0xff816968, line=1
+    objectId=0xff816978, line=2
+    objectId=0xff8167e8, line=3
+    objectId=0xff816998, line=3
+
+Thread 0xff8169a8
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.Object.wait()V (Unknown Source)
+  at java.lang.ref.Reference.tryHandlePending(Z)Z (Unknown Source)
+  at java.lang.ref.Reference$ReferenceHandler.run()V (Unknown Source)
+
+  locals:
+    objectId=0xff816b20, line=1
+    objectId=0xff816b20, line=2
+    objectId=0xff8169a8, line=3
+
+Thread 0xff84db20
+  at java.lang.OutOfMemoryError.<init>()V (Unknown Source)
+  at java.util.Arrays.copyOf([Ljava/lang/Object;ILjava/lang/Class;)[Ljava/lang/Object; (Unknown Source)
+  at java.util.Arrays.copyOf([Ljava/lang/Object;I)[Ljava/lang/Object; (Unknown Source)
+  at java.util.ArrayList.grow(I)V (Unknown Source)
+  at java.util.ArrayList.ensureExplicitCapacity(I)V (Unknown Source)
+  at java.util.ArrayList.ensureCapacityInternal(I)V (Unknown Source)
+  at java.util.ArrayList.add(Ljava/lang/Object;)Z (Unknown Source)
+  at jvm.HeapOOM.main([Ljava/lang/String;)V (HeapOOM.java:21)
+
+  locals:
+    objectId=0xff185f00, line=1
+    objectId=0xff8323a8, line=1
+    objectId=0xff185f00, line=2
+    objectId=0xff816b30, line=3
+    objectId=0xff816b30, line=6
+    objectId=0xffc6e370, line=6
+    objectId=0xff816b30, line=7
+
