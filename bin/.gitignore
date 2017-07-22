@@ -1,4 +1,6 @@
 /abstractfactory/
 /builder/
+/tests/
+/threads/
 /tools/
 /visitor/
