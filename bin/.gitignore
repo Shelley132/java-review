@@ -1,13 +1,3 @@
-/abstractfactory/
-/builder/
-/tests/
-/threads/
-/tools/
-/visitor/
-/jvm/
-/factorymethod/
-/prototype/
-/javaweb/
 /datastructures/
-/nios/
 /newcoder/
+/prototype/
