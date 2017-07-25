@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /factorymethod/
 /abstractfactory/
 /builder/
@@ -9,3 +10,8 @@
 /threads/
 /tools/
 /visitor/
+=======
+/datastructures/
+/newcoder/
+/prototype/
+>>>>>>> 923eb9cc5f71ed3ea260d8f66334d672dad66de0
