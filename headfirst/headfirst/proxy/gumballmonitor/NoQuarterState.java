@@ -1,7 +1,7 @@
 package headfirst.proxy.gumballmonitor;
 
 public class NoQuarterState implements State {
-    GumballMachine gumballMachine;
+	GumballMachine gumballMachine;
  
     public NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;

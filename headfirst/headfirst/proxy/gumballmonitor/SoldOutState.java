@@ -1,7 +1,7 @@
 package headfirst.proxy.gumballmonitor;
 
 public class SoldOutState implements State {
-    GumballMachine gumballMachine;
+	GumballMachine gumballMachine;
  
     public SoldOutState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
