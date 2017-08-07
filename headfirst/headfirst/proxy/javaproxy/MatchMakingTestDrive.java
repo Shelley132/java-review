@@ -4,7 +4,7 @@ import java.lang.reflect.*;
 import java.util.*;
 
 public class MatchMakingTestDrive {
-	Hashtable datingDB = new Hashtable();
+	Hashtable<String, PersonBean> datingDB = new Hashtable<String, PersonBean>();
  	
 	public static void main(String[] args) {
 		MatchMakingTestDrive test = new MatchMakingTestDrive();
