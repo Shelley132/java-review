@@ -5,7 +5,7 @@ package command;
 */
 import java.util.ArrayList;
 import java.util.List;
-
+//接收命令，给谁处理
    public class Broker {
    private List<Order> orderList = new ArrayList<Order>(); 
 
