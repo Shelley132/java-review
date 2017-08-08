@@ -29,3 +29,5 @@
 /command/
 /interpreter/
 /mediator/
+/memento/
+/observer/
