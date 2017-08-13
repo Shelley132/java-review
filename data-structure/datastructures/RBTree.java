@@ -336,7 +336,7 @@ public class RBTree<T extends Comparable<T>> {
                 setRed(gparent);
                 rightRotate(gparent);
             } else {    //若“z的父节点”是“z的祖父节点的右孩子”
-                // Case 1条件：叔叔节点是红色
+                // Case 4条件：叔叔节点是红色
                 RBTNode<T> uncle = gparent.left;
                 if ((uncle!=null) && isRed(uncle)) {
                     setBlack(uncle);
@@ -346,7 +346,7 @@ public class RBTree<T extends Comparable<T>> {
                     continue;
                 }
 
-                // Case 2条件：叔叔是黑色，且当前节点是左孩子
+                // Case 5条件：叔叔是黑色，且当前节点是左孩子
                 if (parent.left == node) {
                     RBTNode<T> tmp;
                     rightRotate(parent);
@@ -355,7 +355,7 @@ public class RBTree<T extends Comparable<T>> {
                     node = tmp;
                 }
 
-                // Case 3条件：叔叔是黑色，且当前节点是右孩子。
+                // Case 6条件：叔叔是黑色，且当前节点是右孩子。
                 setBlack(parent);
                 setRed(gparent);
                 leftRotate(gparent);
