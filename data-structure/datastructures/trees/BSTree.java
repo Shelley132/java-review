@@ -1,6 +1,8 @@
-package datastructures;
+package datastructures.trees;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -498,8 +500,29 @@ public class BSTree<T extends Comparable<T>> {
             System.out.println();  
         }        
     }  
-      
+	private void levelOrder2(BSTNode<T> tree){  
+        if(tree==null){  
+            return;  
+        }  
+        Queue<BSTNode<T>> queue = new LinkedList<BSTNode<T>>();//使用了List的动态扩展  
+        queue.offer(tree);   
+        while(!queue.isEmpty()){          
+            BSTNode<T> p = queue.poll();
+            System.out.print(p.key+ " ");
+            if(p.left !=null){
+            	queue.offer(p.left);
+            }
+            if(p.right!= null) {
+            	queue.offer(p.right);
+            }
+            
+        }        
+    }  
+       
     public void levelOrder(){  
         levelOrder(mRoot);  
+    }
+    public void levelOrder2(){  
+        levelOrder2(mRoot);  
     }
 }

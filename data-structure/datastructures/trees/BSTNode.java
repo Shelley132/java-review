@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.trees;
 /**
  * @author 刘利娟 liulijuan132@gmail.com
  * @version 创建时间:2014年6月13日 下午12:26:40

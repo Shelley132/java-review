@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.trees;
 
 /**
  * @author JUANJUAN
@@ -8,7 +8,7 @@ public class RBTreeTest {
 
 	private static final int a[] = { 10, 40, 30, 60, 90, 70, 20, 50, 80 };
 	private static final boolean mDebugInsert = false; // "插入"动作的检测开关(false，关闭；true，打开)
-	private static final boolean mDebugDelete = false; // "删除"动作的检测开关(false，关闭；true，打开)
+	private static final boolean mDebugDelete = true; // "删除"动作的检测开关(false，关闭；true，打开)
 
 	public static void main(String[] args) {
 		int i, ilen = a.length;
@@ -48,7 +48,7 @@ public class RBTreeTest {
 
 		// 设置mDebugDelete=true,测试"删除函数"
 		if (mDebugDelete) {
-			for (i = 0; i < ilen; i++) {
+			for (i = 5; i >= 0; i--) {
 				tree.remove(a[i]);
 
 				System.out.printf("== 删除节点: %d\n", a[i]);

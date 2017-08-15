@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.trees;
 /**
  * @author JUANJUAN
  * @version 2017年8月10日下午11:23:28

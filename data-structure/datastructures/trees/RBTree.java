@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.trees;
 /**
  * @author JUANJUAN
  * @version 2017年8月11日下午7:38:48
@@ -436,7 +436,7 @@ public class RBTree<T extends Comparable<T>> {
             if (parent.left == node) {
                 other = parent.right;
                 if (isRed(other)) {
-                    // Case 1: x的兄弟w是红色的  
+                    // Case 1: node的兄弟other是红色的  
                     setBlack(other);
                     setRed(parent);
                     leftRotate(parent);
@@ -445,20 +445,20 @@ public class RBTree<T extends Comparable<T>> {
 
                 if ((other.left==null || isBlack(other.left)) &&
                     (other.right==null || isBlack(other.right))) {
-                    // Case 2: x的兄弟w是黑色，且w的俩个孩子也都是黑色的  
+                    // Case 2: node的兄弟other是黑色，且other的俩个孩子也都是黑色的  
                     setRed(other);
                     node = parent;
                     parent = parentOf(node);
                 } else {
 
                     if (other.right==null || isBlack(other.right)) {
-                        // Case 3: x的兄弟w是黑色的，并且w的左孩子是红色，右孩子为黑色。  
+                        // Case 3: node的兄弟other是黑色的，并且other的左孩子是红色，右孩子为黑色。  
                         setBlack(other.left);
                         setRed(other);
                         rightRotate(other);
                         other = parent.right;
                     }
-                    // Case 4: x的兄弟w是黑色的；并且w的右孩子是红色的，左孩子任意颜色。
+                    // Case 4: node的兄弟other是黑色的；并且other的右孩子是红色的，左孩子任意颜色。
                     setColor(other, colorOf(parent));
                     setBlack(parent);
                     setBlack(other.right);
@@ -470,7 +470,7 @@ public class RBTree<T extends Comparable<T>> {
 
                 other = parent.left;
                 if (isRed(other)) {
-                    // Case 1: x的兄弟w是红色的  
+                    // Case 1: node的兄弟other是红色的  
                     setBlack(other);
                     setRed(parent);
                     rightRotate(parent);
@@ -479,21 +479,21 @@ public class RBTree<T extends Comparable<T>> {
 
                 if ((other.left==null || isBlack(other.left)) &&
                     (other.right==null || isBlack(other.right))) {
-                    // Case 2: x的兄弟w是黑色，且w的俩个孩子也都是黑色的  
+                    // Case 2: node的兄弟other是黑色，且other的俩个孩子也都是黑色的  
                     setRed(other);
                     node = parent;
                     parent = parentOf(node);
                 } else {
 
                     if (other.left==null || isBlack(other.left)) {
-                        // Case 3: x的兄弟w是黑色的，并且w的左孩子是红色，右孩子为黑色。  
+                        // Case 3: node的兄弟other是黑色的，并且other的左孩子是黑色，右孩子为红色。  
                         setBlack(other.right);
                         setRed(other);
                         leftRotate(other);
                         other = parent.left;
                     }
 
-                    // Case 4: x的兄弟w是黑色的；并且w的右孩子是红色的，左孩子任意颜色。
+                    // Case 4: node的兄弟other是黑色的；并且other的左孩子是红色的，右孩子任意颜色。
                     setColor(other, colorOf(parent));
                     setBlack(parent);
                     setBlack(other.left);
@@ -503,7 +503,7 @@ public class RBTree<T extends Comparable<T>> {
                 }
             }
         }
-
+System.out.println("===============");
         if (node!=null)
             setBlack(node);
     }

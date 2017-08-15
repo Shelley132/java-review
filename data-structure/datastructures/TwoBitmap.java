@@ -54,7 +54,7 @@ public class TwoBitmap {
 		}
 		System.out.println(count);
 		System.out.println(Arrays.toString(arr));
-	
+	System.out.println(Integer.toBinaryString(arr[0]));
 	}
 
 }

@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.trees;
 /**
  * @author 刘利娟 liulijuan132@gmail.com
  * @version 创建时间:2014年6月11日 下午8:35:23
@@ -59,6 +59,8 @@ public class BSTreeTest {
 		test.levelOrderWithRecursion();
 		System.out.println("\n非递归层次遍历:");
 		test.levelOrder();
+		System.out.println("\n非递归层次遍历:");
+		test.levelOrder2();
 		
 		System.out.println();
 		System.out.println(test.maxDepth());

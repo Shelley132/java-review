@@ -1,4 +1,4 @@
-package datastructures;
+package datastructures.trees;
 
 public class AVLTree<T extends Comparable<T>> {
 	private AVLTreeNode<T> mRoot; // 根结点

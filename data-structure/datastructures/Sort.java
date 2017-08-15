@@ -122,6 +122,7 @@ public class Sort {
 		while(gap<len/3){
 			gap = gap*3+1;
 		}
+		
 		for(;gap>0;gap/=3){
 			for(i=gap; i<len;i++){
 				temp= a[i];
@@ -136,7 +137,7 @@ public class Sort {
 	
 	public static void printArray(int[] array){
 		for(int i = 0; i < array.length; i++){
-			System.out.print(array[i] + "\t");
+			System.out.print(array[i] + ", ");
 		}
 		System.out.println();
 	}
