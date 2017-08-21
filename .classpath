@@ -12,6 +12,5 @@
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.25.jar"/>
 	<classpathentry kind="lib" path="lib/ojdbc14.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.8.0_111/lib/tools.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
