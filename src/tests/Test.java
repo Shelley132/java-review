@@ -1,7 +1,9 @@
 package tests;
 
+import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.concurrent.ConcurrentHashMap;
 
 class Test {
 
@@ -13,6 +15,17 @@ class Test {
 		char a = 'a';
 	
 		PriorityQueue pq;
+		HashMap<Integer, Integer> map= new HashMap<Integer, Integer>();
+		ConcurrentHashMap map2;
+		System.out.println(1<<30);
+		int c = 35 / 4;
+        if (c * 4 < 35)
+            ++c;
+        System.out.println(c);
+        int cap = 2;
+        while (cap < c)
+            cap <<= 1;
+        System.out.println(cap);
 	}
 
 }

@@ -20,7 +20,7 @@ public class HeapSort {
 		int len = arr.size() - 1;
 		int beginIndex = (len - 1) >> 1;// 第一个非叶子节点
 		for (int i = beginIndex; i >= 0; i--) {
-			minHeapify(arr, i, len);
+			maxHeapify(arr, i, len);
 		}
 
 		/*
@@ -29,7 +29,7 @@ public class HeapSort {
 		 */
 		for (int i = len; i > 0; i--) {
 			swap(arr, 0, i);
-			minHeapify(arr, 0, i - 1);
+			maxHeapify(arr, 0, i - 1);
 		}
 	}
 
@@ -47,7 +47,7 @@ public class HeapSort {
 	 * @param len
 	 *            未排序的堆（数组）的长度
 	 */
-	private void minHeapify(ArrayList<Integer> arr, int index, int len) {
+	private void maxHeapify(ArrayList<Integer> arr, int index, int len) {
 		int li = (index << 1) + 1; // 左子节点索引
 		int ri = li + 1; // 右子节点索引
 		int cMax = li; // 子节点值最大索引，默认左子节点。
@@ -58,7 +58,7 @@ public class HeapSort {
 			cMax = ri;
 		if (arr.get(cMax) > arr.get(index)) {
 			swap(arr, cMax, index); // 如果父节点被子节点调换，
-			minHeapify(arr, cMax, len); // 则需要继续判断换下后的父节点是否符合堆的特性。
+			maxHeapify(arr, cMax, len); // 则需要继续判断换下后的父节点是否符合堆的特性。
 		}
 	}
 
@@ -73,7 +73,7 @@ public class HeapSort {
 		int len = arr.size() - 1;
 		int beginIndex = (len - 1) >> 1;// 第一个非叶子节点
 		for (int i = beginIndex; i >= 0; i--) {
-			maxHeapify(arr, i, len);
+			minHeapify(arr, i, len);
 		}
 
 		/*
@@ -82,7 +82,7 @@ public class HeapSort {
 		 */
 		for (int i = len; i > 0; i--) {
 			swap(arr, 0, i);
-			maxHeapify(arr, 0, i - 1);
+			minHeapify(arr, 0, i - 1);
 		}
 	}
 
@@ -94,7 +94,7 @@ public class HeapSort {
 	 * @param len
 	 *            未排序的堆（数组）的长度
 	 */
-	private void maxHeapify(ArrayList<Integer> arr, int index, int len) {
+	private void minHeapify(ArrayList<Integer> arr, int index, int len) {
 		int li = (index << 1) + 1; // 左子节点索引
 		int ri = li + 1; // 右子节点索引
 		int cMin = li; // 子节点值最小索引，默认左子节点。
@@ -105,7 +105,7 @@ public class HeapSort {
 			cMin = ri;
 		if (arr.get(cMin) < arr.get(index)) {
 			swap(arr, cMin, index); // 如果父节点被子节点调换，
-			maxHeapify(arr, cMin, len); // 则需要继续判断换下后的父节点是否符合堆的特性。
+			minHeapify(arr, cMin, len); // 则需要继续判断换下后的父节点是否符合堆的特性。
 		}
 	}
 
