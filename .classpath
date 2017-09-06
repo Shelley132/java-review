@@ -4,7 +4,6 @@
 	<classpathentry kind="src" path="design-pattern"/>
 	<classpathentry kind="src" path="jvm"/>
 	<classpathentry kind="src" path="javaweb"/>
-	<classpathentry kind="src" path="data-structure"/>
 	<classpathentry kind="src" path="headfirst"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.25.jar"/>
