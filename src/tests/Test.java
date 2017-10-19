@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 class Test {
 
@@ -26,6 +27,7 @@ class Test {
         while (cap < c)
             cap <<= 1;
         System.out.println(cap);
+        AtomicInteger i;
 	}
 
 }
